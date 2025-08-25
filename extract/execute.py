@@ -49,7 +49,7 @@ def create_csv_from_sqlite():
 
     conn.close()
 
-    # ✅ Verify CSVs exist
+   
     for f in [matches_path, teams_path]:
         if not os.path.exists(f):
             logger.error(f"CSV missing: {f}")
@@ -65,8 +65,7 @@ if __name__ == "__main__":
 
     if extract_from_zip():
         if create_csv_from_sqlite():
-            logger.info("All CSVs verified successfully ✅")
+            logger.info("All CSVs verified successfully")
 
     elapsed = time.time() - start_time
     logger.info(f"Extraction finished in {int(elapsed)} seconds")
-
