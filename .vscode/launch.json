@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Extract Football Data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/extract/execute.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Transform Football Data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/transform/execute.py",
+      "console": "integratedTerminal",
+      "args": ["${workspaceFolder}/extracted_data", "${workspaceFolder}/parquet_output"]
+    },
+    {
+      "name": "Load Football Data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/load/execute.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

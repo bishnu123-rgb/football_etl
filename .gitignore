@@ -1,0 +1,27 @@
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Data output directories
+extracted_data/
+loaded_data/
+parquet_output/
+
+# Artifacts, logs, jars
+artifacts/
+logs/
+jars/
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.zip
+*.tar
+*.gz
